@@ -22,7 +22,7 @@
     --transition: 0.3s ease;
 }
 
-html { scroll-behavior: smooth; font-size: 18px; }
+html { scroll-behavior: smooth; font-size: 20px; }
 
 body {
     font-family: var(--font-sans);
@@ -266,8 +266,8 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .section-text p {
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: 1.15rem;
+    line-height: 1.85;
     color: var(--muted);
     margin-bottom: 1rem;
 }
@@ -510,7 +510,7 @@ a   { text-decoration: none; color: inherit; }
 }
 .footer-bottom p {
     font-size: 0.8rem;
-    color: #aaa;
+    color: #ffffff;
 }
 
 /* ═══════════════════════════════════════════
