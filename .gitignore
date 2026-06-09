@@ -5,11 +5,9 @@
 *.jpeg
 *.jpg
 *.aux
-*.dart
 *.entitlements
 *.gradle
 *.h
-*.js
 *.kt
 *.log
 *.nav
@@ -29,5 +27,3 @@
 *.xcscheme
 *.xcsettings
 *.xcworkspacedata
-*.xml
-*.yaml
