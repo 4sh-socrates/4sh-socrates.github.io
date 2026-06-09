@@ -22,7 +22,7 @@
     --transition: 0.3s ease;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 18px; }
 
 body {
     font-family: var(--font-sans);
@@ -39,27 +39,35 @@ a   { text-decoration: none; color: inherit; }
 .placeholder-image {
     width: 100%;
     aspect-ratio: 4/3;
-    background: #E0DDD8;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.placeholder-image::after {
-    content: 'Photo';
-    font-family: var(--font-sans);
-    font-size: 0.85rem;
-    color: #999;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    background:
+        linear-gradient(135deg, #F5EFE8 25%, transparent 25%) -20px 0,
+        linear-gradient(225deg, #F5EFE8 25%, transparent 25%) -20px 0,
+        linear-gradient(315deg, #F5EFE8 25%, transparent 25%),
+        linear-gradient(45deg,  #F5EFE8 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: #EDE8E1;
 }
 .placeholder-hero {
     aspect-ratio: 16/9;
-    background: #C8C4BE;
+    border-radius: 0;
+    background:
+        linear-gradient(135deg, #DDD7CE 25%, transparent 25%) -20px 0,
+        linear-gradient(225deg, #DDD7CE 25%, transparent 25%) -20px 0,
+        linear-gradient(315deg, #DDD7CE 25%, transparent 25%),
+        linear-gradient(45deg,  #DDD7CE 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: #D4CEC6;
 }
 .placeholder-founder {
     aspect-ratio: 3/4;
-    background: #D4D0CA;
+    background:
+        linear-gradient(135deg, #EDE8E1 25%, transparent 25%) -20px 0,
+        linear-gradient(225deg, #EDE8E1 25%, transparent 25%) -20px 0,
+        linear-gradient(315deg, #EDE8E1 25%, transparent 25%),
+        linear-gradient(45deg,  #EDE8E1 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: #E5DFD8;
 }
 
 /* ═══════════════════════════════════════════
@@ -502,7 +510,7 @@ a   { text-decoration: none; color: inherit; }
 }
 .footer-bottom p {
     font-size: 0.8rem;
-    color: #555;
+    color: #aaa;
 }
 
 /* ═══════════════════════════════════════════
