@@ -3,27 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4sh.education — Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #fff;
-            color: #282828;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        h1 { color: #FF6700; font-size: 2rem; margin-bottom: 0.5rem; }
-        p  { color: #666; font-size: 1rem; }
-    </style>
+    <title>4sh.education — Great minds think in every language</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <h1>4sh.education</h1>
-        <p>Great minds think in every language.</p>
+
+    <!-- ═══════════════════════════════════════
+         HEADER
+    ═══════════════════════════════════════ -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#hero" class="logo">4sh.education</a>
+            <nav class="desktop-nav">
+                <a href="#wealth">Our Languages</a>
+                <a href="#trap">The Problem</a>
+                <a href="#student">The Student</a>
+                <a href="#building">What We Build</a>
+                <a href="#need">Why Support Us</a>
+            </nav>
+            <a href="#donate" class="btn-donate">Donate</a>
+            <button class="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile nav drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+        <nav>
+            <a href="#hero"     class="mobile-link">Home</a>
+            <a href="#wealth"   class="mobile-link">Our Languages</a>
+            <a href="#trap"     class="mobile-link">The Problem</a>
+            <a href="#student"  class="mobile-link">The Student</a>
+            <a href="#building" class="mobile-link">What We Build</a>
+            <a href="#need"     class="mobile-link">Why Support Us</a>
+            <a href="#donate"   class="mobile-link donate-mobile">Donate</a>
+        </nav>
     </div>
+    <div class="mobile-nav-overlay" id="navOverlay"></div>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 1 — HERO
+        ═══════════════════════════════════════ -->
+        <section id="hero" class="section section-hero">
+            <div class="hero-image-wrap">
+                <div class="placeholder-image placeholder-hero"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Great minds think in every language.</h1>
+                <p class="hero-sub">Placeholder subheadline — one line that sets the stage for the journey.</p>
+                <a href="#donate" class="btn-donate btn-donate-hero">Support Us</a>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 2 — THE WEALTH
+        ═══════════════════════════════════════ -->
+        <section id="wealth" class="section section-alt">
+            <div class="section-inner layout-text-left">
+                <div class="section-text fade-in">
+                    <span class="section-label">Our Languages</span>
+                    <h2>India's greatest inheritance.</h2>
+                    <p>Placeholder — India's linguistic diversity as civilisational achievement. Bengali, Tamil, Telugu, Marathi — living traditions of thought, literature, and wisdom. Centuries deep.</p>
+                    <blockquote class="pull-quote">A language is not just words.<br>It is a way of seeing the world.</blockquote>
+                </div>
+                <div class="section-image fade-in">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 3 — THE TRAP
+        ═══════════════════════════════════════ -->
+        <section id="trap" class="section section-dark">
+            <div class="section-inner layout-image-left">
+                <div class="section-image fade-in">
+                    <div class="placeholder-image"></div>
+                </div>
+                <div class="section-text fade-in">
+                    <span class="section-label section-label-light">The Problem</span>
+                    <h2>One ladder. One language. Millions left behind.</h2>
+                    <p>Placeholder — Colonial education built a single ladder to success, labeled in English. 75 years after independence, that ladder has not changed. Brilliant students who think, dream, and reason in Bengali are told — implicitly, structurally — that their language is not good enough.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 4 — THE STUDENT
+        ═══════════════════════════════════════ -->
+        <section id="student" class="section section-alt">
+            <div class="section-inner layout-text-left">
+                <div class="section-text fade-in">
+                    <span class="section-label">The Student</span>
+                    <h2>Not a victim.<br>A protagonist.</h2>
+                    <p>Placeholder — Curious. Resilient. Full of potential that the system simply has not made room for. These students do not need sympathy. They need access.</p>
+                </div>
+                <div class="section-image fade-in">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 5 — WHAT WE'RE BUILDING
+        ═══════════════════════════════════════ -->
+        <section id="building" class="section">
+            <div class="section-inner layout-image-left">
+                <div class="section-image fade-in">
+                    <div class="placeholder-image placeholder-founder"></div>
+                </div>
+                <div class="section-text fade-in">
+                    <span class="section-label">What We're Building</span>
+                    <h2>Quality teaching.<br>In their language.</h2>
+                    <p>Placeholder — 4sh.education delivers quality teaching to government school students in West Bengal, in the language they actually think in. Mental strength is not an add-on. It is the foundation.</p>
+                    <p class="founder-note">Placeholder — Founder story. 3–5 sentences. Why I built this, personally and honestly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 6 — WHY WE NEED YOU
+        ═══════════════════════════════════════ -->
+        <section id="need" class="section section-alt">
+            <div class="section-inner layout-text-left">
+                <div class="section-text fade-in">
+                    <span class="section-label">Why We Need You</span>
+                    <h2>The content exists.<br>The students are there.<br>The gap is reach.</h2>
+                    <p>Placeholder — Your support funds the bridge between the teaching and the students who need it most. Every rupee goes toward reaching more students.</p>
+                    <div class="impact-numbers">
+                        <div class="impact-stat">
+                            <span class="stat-number">—</span>
+                            <span class="stat-label">Students reached</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="stat-number">—</span>
+                            <span class="stat-label">Schools</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="stat-number">—</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-image fade-in">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SECTION 7 — DONATE
+        ═══════════════════════════════════════ -->
+        <section id="donate" class="section section-donate">
+            <div class="donate-inner fade-in">
+                <h2>Help us reach the next student.</h2>
+                <p>100% of your contribution goes toward reaching more students.</p>
+                <a href="#" class="btn-donate btn-donate-large">Donate Now</a>
+                <div class="email-capture">
+                    <p class="email-label">Not ready to donate? Stay updated on our journey.</p>
+                    <form class="email-form" onsubmit="return false;">
+                        <input type="email" placeholder="Your email address" class="email-input">
+                        <button type="submit" class="btn-email">Keep me posted</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">4sh.education</span>
+                <p class="footer-tagline">Great minds think in every language.</p>
+            </div>
+            <nav class="footer-nav">
+                <span class="footer-nav-title">Sitemap</span>
+                <a href="#hero">Home</a>
+                <a href="#wealth">Our Languages</a>
+                <a href="#trap">The Problem</a>
+                <a href="#student">The Student</a>
+                <a href="#building">What We Build</a>
+                <a href="#need">Why Support Us</a>
+                <a href="#donate">Donate</a>
+            </nav>
+            <div class="footer-contact">
+                <span class="footer-nav-title">Contact</span>
+                <a href="mailto:socratesflutterflow@gmail.com">socratesflutterflow@gmail.com</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 4sh.education. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
