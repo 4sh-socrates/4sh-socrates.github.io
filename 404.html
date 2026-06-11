@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found — 4sh Foundation</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --saffron: #FF6700;
+            --charcoal: #1E1E1E;
+            --muted: #666;
+            --font-serif: Georgia, 'Times New Roman', serif;
+            --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        html, body { height: 100%; }
+        body {
+            font-family: var(--font-sans);
+            background: #fff;
+            color: var(--charcoal);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            text-align: center;
+        }
+        .error-num {
+            font-family: var(--font-serif);
+            font-size: clamp(5rem, 15vw, 9rem);
+            font-weight: 700;
+            color: var(--saffron);
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+        .error-msg {
+            font-family: var(--font-serif);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: var(--charcoal);
+            margin: 1rem 0 0.5rem;
+        }
+        .error-sub {
+            font-size: 1rem;
+            color: var(--muted);
+            margin-bottom: 2.5rem;
+        }
+        .btn-home {
+            display: inline-block;
+            background: var(--saffron);
+            color: #fff;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 0.7rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+        .btn-home:hover { background: #E05500; }
+    </style>
+</head>
+<body>
+    <div class="error-num">404</div>
+    <p class="error-msg">This page doesn't exist.</p>
+    <p class="error-sub">The link may be broken, or the page may have moved.</p>
+    <a href="/" class="btn-home">Back to Home</a>
+</body>
+</html>

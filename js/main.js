@@ -1,4 +1,4 @@
-/* 4sh.education — Main JS */
+/* 4sh Foundation — Main JS */
 
 // ── Hamburger / Mobile Nav ──
 const hamburger  = document.querySelector('.hamburger');
@@ -51,3 +51,49 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ── Back to top ──
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+}, { passive: true });
+
+backToTop?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ── Join Us form (Formspree AJAX) ──
+const joinForm    = document.getElementById('joinForm');
+const joinSuccess = document.getElementById('joinSuccess');
+
+joinForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = joinForm.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    try {
+        const res = await fetch(joinForm.action, {
+            method: 'POST',
+            body: new FormData(joinForm),
+            headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+            joinForm.hidden = true;
+            joinSuccess.hidden = false;
+        } else {
+            btn.disabled = false;
+            btn.textContent = 'Count me in';
+            alert('Something went wrong. Please try again.');
+        }
+    } catch {
+        btn.disabled = false;
+        btn.textContent = 'Count me in';
+        alert('Something went wrong. Please try again.');
+    }
+});
