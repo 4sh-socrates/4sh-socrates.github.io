@@ -96,6 +96,40 @@ a   { text-decoration: none; color: inherit; }
     background-color: #E5DFD8;
 }
 
+/* ── Real Images ── */
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.img-founder {
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.img-screenshot {
+    border: 1px solid #E0DAD3;
+    border-radius: 6px;
+}
+
+.img-app {
+    max-width: 260px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #E0DAD3;
+}
+
 /* ═══════════════════════════════════════════
    HEADER
 ═══════════════════════════════════════════ */
