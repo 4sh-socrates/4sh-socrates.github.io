@@ -124,16 +124,12 @@ a   { text-decoration: none; color: inherit; }
 /* Founder: favor face over feet */
 .img-founder { object-position: top center; }
 
-/* Website screenshot — full-width showcase: text above, image below */
+/* Website screenshot — image first, text full-width below */
 #pilot-web .section-inner {
     grid-template-columns: 1fr;
     gap: 2.5rem;
 }
-#pilot-web .section-text {
-    max-width: 560px;
-}
 #pilot-web .section-image {
-    order: 1;
     align-self: auto;
     min-height: 0;
     box-shadow: 0 12px 48px rgba(0,0,0,0.12);
