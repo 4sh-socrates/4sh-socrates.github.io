@@ -124,19 +124,27 @@ a   { text-decoration: none; color: inherit; }
 /* Founder: favor face over feet */
 .img-founder { object-position: top center; }
 
-/* Website screenshot: show full UI, don't crop */
+/* Website screenshot — full-width showcase: text above, image below */
+#pilot-web .section-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+#pilot-web .section-text {
+    max-width: 560px;
+}
 #pilot-web .section-image {
-    align-self: center;
+    order: 1;
+    align-self: auto;
     min-height: 0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.12);
 }
 #pilot-web .section-image img {
     height: auto;
     border: 1px solid #E0DAD3;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
-/* App screenshot: phone-shaped, centered */
+/* App screenshot — larger phone */
 #pilot-apps .section-image {
     align-self: center;
     min-height: 0;
@@ -149,12 +157,13 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .img-app {
-    max-width: 260px;
+    max-width: 340px;
     height: auto;
-    border-radius: 20px;
-    border: 1px solid #E0DAD3;
+    border-radius: 32px;
+    border: 1px solid rgba(0,0,0,0.08);
     display: block;
     margin: 0 auto;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.18);
 }
 
 /* ═══════════════════════════════════════════
