@@ -294,8 +294,8 @@ a   { text-decoration: none; color: inherit; }
     color: #fff;
 }
 .section-dark .section-label-light { color: var(--saffron); }
-.section-dark h2  { color: #fff; }
-.section-dark p   { color: #ccc; }
+.section-dark .section-text h2 { color: #fff; }
+.section-dark .section-text p  { color: rgba(255,255,255,0.82); }
 
 /* ═══════════════════════════════════════════
    SECTION TEXT
