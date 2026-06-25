@@ -607,6 +607,16 @@ a   { text-decoration: none; color: inherit; }
     font-style: italic;
 }
 
+.join-policy {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+}
+
+.join-policy::before { content: '\201C'; }
+.join-policy::after  { content: '\201D'; }
+
 /* ═══════════════════════════════════════════
    FOOTER
 ═══════════════════════════════════════════ */
