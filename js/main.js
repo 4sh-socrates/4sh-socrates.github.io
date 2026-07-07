@@ -67,33 +67,11 @@ backToTop?.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ── Join Us form (Formspree AJAX) ──
-const joinForm    = document.getElementById('joinForm');
-const joinSuccess = document.getElementById('joinSuccess');
-
-joinForm?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = joinForm.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-
-    try {
-        const res = await fetch(joinForm.action, {
-            method: 'POST',
-            body: new FormData(joinForm),
-            headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-            joinForm.hidden = true;
-            joinSuccess.hidden = false;
-        } else {
-            btn.disabled = false;
-            btn.textContent = 'Count me in';
-            alert('Something went wrong. Please try again.');
+// ── Click-to-WhatsApp CTA click tracking ──
+document.querySelectorAll('.btn-whatsapp').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+            gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: 'join_us' });
         }
-    } catch {
-        btn.disabled = false;
-        btn.textContent = 'Count me in';
-        alert('Something went wrong. Please try again.');
-    }
+    });
 });
