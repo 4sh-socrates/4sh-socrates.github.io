@@ -68,10 +68,10 @@ backToTop?.addEventListener('click', () => {
 });
 
 // ── Click-to-WhatsApp CTA click tracking ──
-document.querySelectorAll('.btn-whatsapp').forEach(btn => {
+document.querySelectorAll('.btn-whatsapp-option').forEach(btn => {
     btn.addEventListener('click', () => {
         if (typeof gtag === 'function') {
-            gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: 'join_us' });
+            gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: btn.dataset.category || 'join_us' });
         }
     });
 });
